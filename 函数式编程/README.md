@@ -1,20 +1,22 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [函数式编程](#%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B)
-  - [几个核心概念](#%E5%87%A0%E4%B8%AA%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5)
+- [函数式编程](#函数式编程)
+  - [几个核心概念](#几个核心概念)
   - [CAUTION](#caution)
-  - [纯函数(Pure Functions)](#%E7%BA%AF%E5%87%BD%E6%95%B0pure-functions)
-  - [柯里化(Currying) & 函数组合(Compose)](#%E6%9F%AF%E9%87%8C%E5%8C%96currying--%E5%87%BD%E6%95%B0%E7%BB%84%E5%90%88compose)
-    - [柯里化(Currying)](#%E6%9F%AF%E9%87%8C%E5%8C%96currying)
+  - [纯函数(Pure Functions)](#纯函数pure-functions)
+  - [柯里化(Currying) & 函数组合(Compose)](#柯里化currying--函数组合compose)
+    - [柯里化(Currying)](#柯里化currying)
+    - [函数组合(Compose)](#函数组合compose)
+  - [实战](#实战)
+  - [参考](#参考)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--
  * @Author: zhy
  * @Date: 2020-11-09 10:24:47
- * @LastEditTime: 2020-11-09 11:48:59
+ * @LastEditTime: 2020-11-09 11:54:27
 -->
 # 函数式编程
 > **函数式编程**强调的是如何通过函数的组合变换去解决问题，而不是我通过写什么样的语句去解决问题，当你的代码越来越多的时候，这种函数的拆分和组合就会产生出强大的力量

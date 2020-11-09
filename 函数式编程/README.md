@@ -1,7 +1,7 @@
 <!--
  * @Author: zhy
  * @Date: 2020-11-09 10:24:47
- * @LastEditTime: 2020-11-09 11:04:12
+ * @LastEditTime: 2020-11-09 11:13:14
 -->
 # 函数式编程
 > **函数式编程**强调的是如何通过函数的组合变换去解决问题，而不是我通过写什么样的语句去解决问题，当你的代码越来越多的时候，这种函数的拆分和组合就会产生出强大的力量
@@ -17,9 +17,12 @@
 list.map(item => {
   item.type = 1;
   item.age++;
-}) ```
+}) 
+```
+
 
 这样函数最主要的输出功能没有了，变成了直接修改了外部变量，这就是它的副作用。而没有副作用的写法应该是：
 ``` const list = [...];
 // 修改 list 中的 type 和 age
-const newList = list.map(item => ({...item, type: 1, age:item.age + 1})); ```
+const newList = list.map(item => ({...item, type: 1, age:item.age + 1})); 
+```

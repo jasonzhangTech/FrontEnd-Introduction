@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [函数式编程](#%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B)
+  - [几个核心概念](#%E5%87%A0%E4%B8%AA%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5)
+  - [CAUTION](#caution)
+  - [纯函数(Pure Functions)](#%E7%BA%AF%E5%87%BD%E6%95%B0pure-functions)
+  - [柯里化(Currying) & 函数组合(Compose)](#%E6%9F%AF%E9%87%8C%E5%8C%96currying--%E5%87%BD%E6%95%B0%E7%BB%84%E5%90%88compose)
+    - [柯里化(Currying)](#%E6%9F%AF%E9%87%8C%E5%8C%96currying)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!--
  * @Author: zhy
  * @Date: 2020-11-09 10:24:47

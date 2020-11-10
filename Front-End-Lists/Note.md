@@ -8,14 +8,18 @@
   - [面向对象](#面向对象)
     - [JavaScript的对象特征](#javascript的对象特征)
     - [JavaScript 对象的两类属性](#javascript-对象的两类属性)
-  - [](#)
+  - [什么是原型？](#什么是原型)
+    - [JavaScript的原型](#javascript的原型)
+    - [ES6 中的类](#es6-中的类)
+  - [JavaScript中的对象的分类](#javascript中的对象的分类)
+    - [](#)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--
  * @Author: zhy
  * @Date: 2020-11-10 11:04:16
- * @LastEditTime: 2020-11-10 16:23:20
+ * @LastEditTime: 2020-11-10 17:02:36
 -->
 # JavaScript
 ## 7种语言类型
@@ -74,5 +78,49 @@
 - 可以使用内置函数 getOwnPropertyDescripter 来查看
 - 可以使用 Object.defineProperty，改变属性的特征，或者定义访问器属性。
 
-## 
+## 什么是原型？
+- 原型是顺应人类自然思维的产物。中文中有个成语叫做“照猫画虎”，这里的猫看起来就是虎的原型，所以，由此我们可以看出，用原型来描述对象的方法可以说是古已有之。
+- “基于类”的编程提倡使用一个关注分类和类之间关系开发模型。在这类语言中，总是先有类，再从类去实例化一个对象。类与类之间又可能会形成继承、组合等关系。类又往往与语言的类型系统整合，形成一定编译时的能力。
+- 与此相对，“基于原型”的编程看起来更为提倡程序员去关注一系列对象实例的行为，而后才去关心如何将这些对象，划分到最近的使用方式相似的原型对象，而不是将它们分成类。
+
+### JavaScript的原型
+- 如果所有对象都有私有字段[[prototype]]，就是对象的原型；
+- 读一个属性，如果对象本身没有，则会继续访问对象的原型，直到原型为空或者找到为止。
+  
+### ES6 中的类
+- 类提供了继承能力
+```
+class Animal { 
+  constructor(name) {
+    this.name = name;
+  }
+  
+  speak() {
+    console.log(this.name + ' makes a noise.');
+  }
+}
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name); // call the super class constructor and pass in the name parameter
+  }
+
+  speak() {
+    console.log(this.name + ' barks.');
+  }
+}
+
+let d = new Dog('Mitzie');
+d.speak(); // Mitzie barks.
+```
+
+## JavaScript中的对象的分类
+> 我们可以把对象分成几类。
+> - 宿主对象（host Objects）：由 JavaScript 宿主环境提供的对象，它们的行为完全由宿主环境决定。
+> - 内置对象（Built-in Objects）：由 JavaScript 语言提供的对象。
+>  - 固有对象（Intrinsic Objects ）：由标准规定，随着 JavaScript 运行时创建而自动创建的对象实例。
+>  - 原生对象（Native Objects）：可以由用户通过 Array、RegExp 等内置构造器或者特殊语法创建的对象。
+>  - 普通对象（Ordinary Objects）：由{}语法、Object 构造器或者 class 关键字定义类创建的对象，它能够被原型继承。
+
+### 
    

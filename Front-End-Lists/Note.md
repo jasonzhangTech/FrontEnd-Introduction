@@ -22,13 +22,14 @@
     - [新特性：async/await](#新特性asyncawait)
     - [闭包](#闭包)
     - [函数](#函数)
+    - [this 关键字的行为](#this-关键字的行为)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--
  * @Author: zhy
  * @Date: 2020-11-10 11:04:16
- * @LastEditTime: 2020-11-12 09:04:50
+ * @LastEditTime: 2020-11-20 21:13:44
 -->
 # JavaScript
 ## 7种语言类型
@@ -216,3 +217,4 @@ d.speak(); // Mitzie barks.
 - 类：**用 class 定义的类，实际上也是函数。**
 - 异步函数：**普通函数、箭头函数和生成器函数加上 async 关键字。**
 
+### this 关键字的行为
